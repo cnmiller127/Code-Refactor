@@ -1,4 +1,4 @@
-<!-- -The Header and Footer had div element tags with classes "header" and "footer". It is more semantic to use <header> and <footer> tags.
+-The Header and Footer had div element tags with classes "header" and "footer". It is more semantic to use <header> and <footer> tags.
 -<nav> tags were used for the link navigation bar at the top of screen.
 -The title is now called "Horiseon" since that is the name of the company.
 -All image elements now include an "alt" describing the image.
@@ -15,5 +15,5 @@ allows us to declare:
 when h2 is used within the class "contents", use xyz styling. If used in footer, use abc styling. If used anywhere else use default styling. 
 -Created classes specific to main and aside images and text so that if anything is added the developer can just create a new class, rather than using nesting.
 -Ensured h1>h2>h3 in font size.
-  -->
+
 
