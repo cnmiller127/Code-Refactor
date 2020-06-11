@@ -1,44 +1,19 @@
-# 01 HTML CSS Git: Code Refactor
+<!-- -The Header and Footer had div element tags with classes "header" and "footer". It is more semantic to use <header> and <footer> tags.
+-<nav> tags were used for the link navigation bar at the top of screen.
+-The title is now called "Horiseon" since that is the name of the company.
+-All image elements now include an "alt" describing the image.
+-Since the marketing meeting image is used in one instance, an ID was assigned to it. The "hero" css class was changed to an id
+-<main> and <aside> tags were used to specify the area where the main contents and side information, respectively.
+-<section> tags were used in the containers with information pertaining to a specific single topic. 
+-An ID was assigned to the "search-engine-optimization" div element so the link in the header functions properly
 
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it to either meet a certain set of standards or implement a new technology. Web accessibility is an increasingly important consideration for businesses, ensuring that people with disabilities or socio-economic restrictions have access to their website, and helping them avoid litigation.
+-For css, any time there were classes with the same body contents, these classes were consolidated, since the same class can be used in multiple instances.
+For example, there were 3 different "benefit" div classes that had the exact same contents. A class name was chosen that is universal to the three benefits,
+and the same common contents were used in the class body. 
+-The h2 in the "content" class div had a unique h2. Same for the footer h2. 
+allows us to declare:
+when h2 is used within the class "contents", use xyz styling. If used in footer, use abc styling. If used anywhere else use default styling. 
+-Created classes specific to main and aside images and text so that if anything is added the developer can just create a new class, rather than using nesting.
+-Ensured h1>h2>h3 in font size.
+  -->
 
-Your task is to refactor an existing webpage to make it accessible. An important rule to follow when working with someone else's code is the Scout Rule:
-
-> Always leave the code you are editing a little cleaner than you found it.
-
-To impress clients, you should always go the extra mile and improve their codebase for long term sustainability. Ensure that all links are functioning correctly and clean up the CSS to make it more efficient, consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
-
-## User Story
-
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
-
-## Acceptance Criteria
-
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
